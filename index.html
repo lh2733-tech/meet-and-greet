@@ -1,230 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Meet & Greet Reviewer — Master Specification</title>
-  <meta name="robots" content="index, follow">
-</head>
-<body>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                 sans-serif;
+    line-height: 1.55;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    color: #222;
+  }
 
-<h1>Meet & Greet Reviewer — Master Specification</h1>
+  h1, h2, h3, h4 {
+    margin-top: 1.6em;
+    font-weight: 600;
+  }
 
-<p>
-<strong>Version:</strong> v1.0<br>
-<strong>Effective date:</strong> March 2026
-</p>
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 4px; }
+  h3 { font-size: 1.25rem; margin-top: 1.4em; }
+  h4 { font-size: 1.1rem; color: #444; margin-top: 1.2em; }
 
-<p>
-This page defines the <strong>authoritative rules</strong> for evaluating Meet &amp; Greet
-presentations. It governs baseline requirements, scoring rubric, formatting rules,
-severity logic, readiness scoring, and required output structure.
-</p>
+  pre {
+    background: #f8f8f8;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    border: 1px solid #e2e2e2;
+  }
 
-<hr>
+  ul, ol {
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
+  }
 
-<h2 id="definition">1) Meet &amp; Greet Deck Definition &amp; Section Map</h2>
+  li { margin-bottom: 4px; }
 
-<p>All Meet &amp; Greet presentations are evaluated against the following structure.
-Slide titles may vary; sections must be mapped by <strong>content</strong>, not labels.</p>
+  code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.95em;
+  }
 
-<ol>
-  <li>Cover / Title Slide</li>
-  <li>Agenda</li>
-  <li>Company Overview</li>
-  <li>Organizational Structure / Team</li>
-  <li>Corporate History / Milestones</li>
-  <li>Corporate Facts &amp; Safety</li>
-  <li>Strengths / Value Proposition</li>
-  <li>Our Clients</li>
-  <li>Applicable Projects (Overview)</li>
-  <li>Applicable Projects (Case Studies)</li>
-  <li>Closing / Contact</li>
-</ol>
-
-<p><strong>Common synonym mapping:</strong></p>
-<ul>
-  <li>Company Overview → Who We Are, About Us, At a Glance</li>
-  <li>Organizational Structure → Team, Leadership, Org Chart</li>
-  <li>Corporate History → Timeline, Milestones</li>
-  <li>Corporate Facts &amp; Safety → Safety, Risk &amp; Compliance</li>
-  <li>Strengths → Differentiators, Why Us</li>
-  <li>Applicable Projects → Relevant Experience, Portfolio</li>
-  <li>Closing → Thank You, Contact</li>
-</ul>
-
-<hr>
-
-<h2 id="baseline">2) Baseline Checklist (Inclusion Criteria)</h2>
-
-<p>Each checklist item must be marked as ✅ Included, ⚠️ Partially Included, or ❌ Missing.</p>
-
-<h3>Cover / Title Slide</h3>
-<ul>
-  <li>Company slogan</li>
-  <li>Company name</li>
-  <li>Date of presentation</li>
-  <li>Firm you are presenting to</li>
-</ul>
-
-<h3>Agenda</h3>
-<ul>
-  <li>Agenda slide included</li>
-  <li>Company Overview listed</li>
-  <li>Relevant Experience listed</li>
-  <li>Q&amp;A listed</li>
-</ul>
-
-<h3>Company Overview</h3>
-<ul>
-  <li>Overview paragraph included</li>
-  <li>Primary services described</li>
-  <li>Geographic reach noted</li>
-</ul>
-
-<h3>Organizational Structure</h3>
-<ul>
-  <li>Organizational chart included</li>
-  <li>Employee counts listed</li>
-  <li>Licenses listed</li>
-  <li>Years in business stated</li>
-</ul>
-
-<h3>Corporate History</h3>
-<ul>
-  <li>History narrative included</li>
-  <li>Certifications listed</li>
-</ul>
-
-<h3>Corporate Facts &amp; Safety</h3>
-<ul>
-  <li>2–3 similar jobs listed</li>
-  <li>Trades self-performed listed</li>
-  <li>EMR ratings (up to 3 years) included</li>
-</ul>
-
-<h3>Strengths</h3>
-<ul>
-  <li>3–4 differentiators listed</li>
-</ul>
-
-<h3>Our Clients</h3>
-<ul>
-  <li>Prominent clients listed</li>
-  <li>Clients similar to Columbia highlighted</li>
-</ul>
-
-<h3>Applicable Projects</h3>
-<ul>
-  <li>Minimum of 4 projects included</li>
-  <li>Dates, values, scope listed</li>
-  <li>Photos included</li>
-</ul>
-
-<h3>Closing</h3>
-<ul>
-  <li>Contact information included</li>
-  <li>Thank you / closing slide included</li>
-</ul>
-
-<hr>
-
-<h2 id="formatting">3) Baseline Output Formatting &amp; Readiness Logic</h2>
-
-<p><strong>Status icons:</strong></p>
-<ul>
-  <li>✅ Included</li>
-  <li>⚠️ Partially Included</li>
-  <li>❌ Missing</li>
-</ul>
-
-<p><strong>Severity tags:</strong></p>
-<ul>
-  <li>🔴 Required — blocks submission readiness</li>
-  <li>🟡 Recommended — strengthens presentation</li>
-</ul>
-
-<p><strong>Baseline Readiness Logic:</strong></p>
-<ul>
-  <li>Y = checklist items marked ✅</li>
-  <li>N = total checklist items</li>
-  <li>R = open 🔴 Required items</li>
-  <li>Rec = open 🟡 Recommended items</li>
-  <li>✅ Ready if R = 0</li>
-  <li>❌ Not submission-ready if R &gt; 0</li>
-</ul>
-
-<p><strong>Baseline Verdict Block (mandatory):</strong></p>
-<pre>
-Baseline Status
-Baseline Readiness Score: Y / N
-Auto-statement:
-• If ❌ → Ready once these 🔴 items are fixed
-• If ✅ → All 🔴 items resolved
-</pre>
-
-<p><strong>Formatting Rules:</strong></p>
-<ul>
-  <li>Render baseline section-by-section (no tables)</li>
-  <li>Each checklist item must be a bold label</li>
-  <li>Status line below each item with page reference</li>
-  <li>❌ / ⚠️ items must include severity and an italicized one-line fix</li>
-</ul>
-
-<hr>
-
-<h2 id="rubric">4) Scoring Rubric (Copy-Only)</h2>
-
-<p>Each section is scored using <strong>1 / 3 / 5 only</strong>:</p>
-
-<ul>
-  <li><strong>1 — Poor:</strong> Generic, vague, or missing</li>
-  <li><strong>3 — Good:</strong> Complete but surface-level</li>
-  <li><strong>5 — Great:</strong> Specific, audience-aware, institution-ready</li>
-</ul>
-
-<p><strong>Scored sections (exactly nine):</strong></p>
-<ol>
-  <li>Cover &amp; Context</li>
-  <li>Company Overview</li>
-  <li>Org Structure / Team</li>
-  <li>Corporate History</li>
-  <li>Corporate Facts &amp; Safety</li>
-  <li>Clients</li>
-  <li>Applicable Projects</li>
-  <li>Value Proposition / Why Us</li>
-  <li>Closing / Contact</li>
-</ol>
-
-<hr>
-
-<h2 id="scoring-table">5) Scoring Table — Output Contract</h2>
-
-<p>The scoring table MUST use the following columns and order without modification:</p>
-
-<pre>
-Section | Score (1/3/5) | Rationale (why) | Improvement (what to change) | Starting-Point Copy (paste-ready)
-</pre>
-
-<p>The overall average must be calculated as the simple mean of the nine scores.</p>
-
-<hr>
-
-<h2 id="summary">6) Consolidated Summary &amp; Action Plan</h2>
-
-<ul>
-  <li>Provide 5–10 prioritized fixes, ordered by impact</li>
-  <li>🔴 Required baseline gaps must be prioritized first</li>
-  <li>Every item must include paste-ready starter copy</li>
-  <li>Maintain institutional tone (e.g., Columbia University)</li>
-  <li>Include a 5–7 sentence executive summary</li>
-</ul>
-
-<hr>
-
-<p>
-<strong>This page is the single source of truth for Meet &amp; Greet evaluation.</strong><br>
-Any deviation from these rules is incorrect.
-</p>
-
-</body>
-</html>
+  strong {
+    font-weight: 600;
+  }
+</style>

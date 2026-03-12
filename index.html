@@ -18,25 +18,20 @@
       color: #222;
       background: #fff;
     }
-
     h1, h2, h3, h4 {
       font-weight: 600;
       margin-top: 1.6em;
     }
-
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 4px; }
     h3 { font-size: 1.3rem; margin-top: 1.4em; }
     h4 { font-size: 1.15rem; color: #444; margin-top: 1.2em; }
-
     ul, ol {
       margin-top: 0.4em;
       margin-bottom: 0.8em;
       padding-left: 1.2em;
     }
-
     li { margin-bottom: 4px; }
-
     pre {
       background: #f8f8f8;
       padding: 16px;
@@ -46,14 +41,12 @@
       white-space: pre-wrap;
       font-size: 0.95rem;
     }
-
     code {
       background: #f4f4f4;
       padding: 2px 4px;
       border-radius: 4px;
       font-size: 0.9em;
     }
-
     strong { font-weight: 600; }
     hr { margin: 2.2em 0; border: none; border-bottom: 1px solid #ddd; }
   </style>
@@ -76,9 +69,14 @@ readiness scoring, and required output structure.
 
 <hr>
 
+
+<!-- ============================================================= -->
+<!-- 1) Deck Definition -->
+<!-- ============================================================= -->
+
 <h2 id="definition">1) Meet &amp; Greet Deck Definition &amp; Section Map</h2>
 
-<p>Meet &amp; Greet presentations must be mapped by <strong>content</strong>, not slide titles.</p>
+<p>Evaluate slides by <strong>content</strong>, not titles.</p>
 
 <ol>
   <li>Cover / Title Slide</li>
@@ -107,10 +105,14 @@ readiness scoring, and required output structure.
 
 <hr>
 
+
+<!-- ============================================================= -->
+<!-- 2) Baseline Checklist -->
+<!-- ============================================================= -->
+
 <h2 id="baseline">2) Baseline Checklist (Inclusion Criteria)</h2>
 
-<p>Each checklist item must be marked as:  
-<strong>✅ Included&nbsp;&nbsp;⚠️ Partially Included&nbsp;&nbsp;❌ Missing</strong></p>
+<p>Mark each as: <strong>✅ Included</strong>, <strong>⚠️ Partially Included</strong>, <strong>❌ Missing</strong></p>
 
 <h3>Cover / Title Slide</h3>
 <ul>
@@ -182,6 +184,11 @@ readiness scoring, and required output structure.
 
 <hr>
 
+
+<!-- ============================================================= -->
+<!-- 3) Baseline Formatting -->
+<!-- ============================================================= -->
+
 <h2 id="formatting">3) Baseline Output Formatting &amp; Readiness Logic</h2>
 
 <p><strong>Status Icons:</strong>  
@@ -193,16 +200,7 @@ readiness scoring, and required output structure.
   <li>🟡 Recommended — strengthens presentation</li>
 </ul>
 
-<p><strong>Baseline Readiness Logic:</strong></p>
-<ul>
-  <li>Y = number of checklist items marked ✅</li>
-  <li>N = total checklist items</li>
-  <li>R = count of 🔴 Required items</li>
-  <li>Rec = count of 🟡 Recommended items</li>
-  <li>Ready if R = 0</li>
-</ul>
-
-<p><strong>Baseline Verdict Block (required output):</strong></p>
+<h3>Baseline Verdict Block (Mandatory)</h3>
 
 <pre>
 Baseline Status  
@@ -239,11 +237,15 @@ All 🔴 items resolved.
 
 <hr>
 
+
+<!-- ============================================================= -->
+<!-- 4) Rubric -->
+<!-- ============================================================= -->
+
 <h2 id="rubric">4) Scoring Rubric (Copy-Only)</h2>
 
 <p>Use only <strong>1 / 3 / 5</strong> scoring.</p>
 
-<p><strong>Nine required scoring sections:</strong></p>
 <ol>
   <li>Cover &amp; Context</li>
   <li>Company Overview</li>
@@ -256,33 +258,115 @@ All 🔴 items resolved.
   <li>Closing / Contact</li>
 </ol>
 
+
+<!-- ============================================================= -->
+<!-- 4a) Rubric Scoring Examples -->
+<!-- ============================================================= -->
+
+<h3 id="rubric-examples">4a) Rubric Scoring Examples (Norming Guidance)</h3>
+
+<p>These examples standardize what qualifies as Poor (1), Good (3), or Great (5).</p>
+
+<h4>1. Cover &amp; Context</h4>
+<ul>
+  <li><strong>1 – Poor:</strong> Generic title<br>Example: “Company Presentation”</li>
+  <li><strong>3 – Good:</strong> Company + audience + date<br>Example: “ABC Construction — Presented to Columbia University — March 2025”</li>
+  <li><strong>5 – Great:</strong> Contextualized to institution &amp; meeting<br>Example: “ABC Construction — Meet &amp; Greet — Columbia Facilities — March 14, 2025”</li>
+</ul>
+
+<h4>2. Company Overview</h4>
+<ul>
+  <li><strong>1:</strong> Generic marketing<br>Example: “We are a full-service construction company.”</li>
+  <li><strong>3:</strong> Services &amp; markets stated<br>Example: “Founded 2019, specializing in interior renovations.”</li>
+  <li><strong>5:</strong> Tied to institutional needs<br>Example: “Renovations in occupied institutional buildings.”</li>
+</ul>
+
+<h4>3. Org Structure / Team</h4>
+<ul>
+  <li><strong>1:</strong> Roles unclear</li>
+  <li><strong>3:</strong> Roles &amp; names listed</li>
+  <li><strong>5:</strong> Roles tied to credentials and accountability</li>
+</ul>
+
+<h4>4. Corporate History</h4>
+<ul>
+  <li><strong>1:</strong> Vague narrative</li>
+  <li><strong>3:</strong> Timeline provided</li>
+  <li><strong>5:</strong> Milestones tied to growth, certification, complexity</li>
+</ul>
+
+<h4>5. Corporate Facts &amp; Safety</h4>
+<ul>
+  <li><strong>1:</strong> No safety info</li>
+  <li><strong>3:</strong> EMR or basic stats</li>
+  <li><strong>5:</strong> Practices + performance</li>
+</ul>
+
+<h4>6. Clients</h4>
+<ul>
+  <li><strong>1:</strong> “Various clients”</li>
+  <li><strong>3:</strong> Named clients</li>
+  <li><strong>5:</strong> Clients relevant to institutional scale</li>
+</ul>
+
+<h4>7. Applicable Projects</h4>
+<ul>
+  <li><strong>1:</strong> Photos only</li>
+  <li><strong>3:</strong> Name, value, scope</li>
+  <li><strong>5:</strong> Mini case studies with scope, scale, duration, role clarity</li>
+</ul>
+
+<h4>8. Value Proposition</h4>
+<ul>
+  <li><strong>1:</strong> Buzzwords</li>
+  <li><strong>3:</strong> Clear strengths</li>
+  <li><strong>5:</strong> Strengths supported by content</li>
+</ul>
+
+<h4>9. Closing</h4>
+<ul>
+  <li><strong>1:</strong> Missing or vague</li>
+  <li><strong>3:</strong> Contact info present</li>
+  <li><strong>5:</strong> Clear call to action</li>
+</ul>
+
 <hr>
+
+
+<!-- ============================================================= -->
+<!-- 5) Scoring table -->
+<!-- ============================================================= -->
 
 <h2 id="scoring-table">5) Scoring Table — Output Contract</h2>
 
-<p>The scoring table MUST use this exact structure:</p>
+<p>Use this exact table structure:</p>
 
 <pre>
 Section | Score (1/3/5) | Rationale (why) | Improvement (what to change) | Starting‑Point Copy (paste‑ready)
 </pre>
 
-<p>The overall average must be the simple mean of the nine scores.</p>
+<p>Compute the final average as a simple mean of nine scores.</p>
 
 <hr>
+
+
+<!-- ============================================================= -->
+<!-- 6) Consolidated Summary -->
+<!-- ============================================================= -->
 
 <h2 id="summary">6) Consolidated Summary &amp; Action Plan</h2>
 
 <ul>
   <li>Provide 5–10 prioritized fixes</li>
-  <li>🔴 Required baseline gaps first</li>
-  <li>Each fix must include paste‑ready starter copy</li>
+  <li>🔴 Required baseline issues must appear first</li>
+  <li>Include paste‑ready starter copy for each fix</li>
   <li>Include a 5–7 sentence executive summary</li>
-  <li>Use institutional tone</li>
+  <li>Use institutional, professional tone</li>
 </ul>
 
 <hr>
 
-<p><strong>This page is the single source of truth for Meet &amp; Greet evaluation.</strong><br>
+<p><strong>This page is the single source of truth for Meet & Greet evaluation.</strong><br>
 Any deviation from these rules is incorrect.</p>
 
 </body>
